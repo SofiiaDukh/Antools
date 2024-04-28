@@ -16,65 +16,238 @@
 
 <body>
     <header>
-        <div>
-            <img src="images/Group 159.svg">
-            <a class="logo" href="index.html">antools.</a>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Categories</a>
-                    </li>
-                    <li>
-                        <a href="#">My Collections</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                </ul>
-            </nav>
-            <button type="button">Login</button>
-            <button type="button">Sign up</button>
+        <div class="container">
+            <div class="flex">
+                <img src="images/logo.svg" alt="logo">
+                <a class="logo" href="index.html">antools.</a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a class="home" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="categories" href="#">Categories</a>
+                        </li>
+                        <li>
+                            <a class="my Collections" href="#">My Collections</a>
+                        </li>
+                        <li>
+                            <a class="blog" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="buttons">
+                    <button class="first-button" type="button">Login</button>
+                    <button class="second-button" type="button">Sign up</button>
+                </div>
+            </div>
         </div>
-        <div>
-            <h1>Awesome tools for Designer & Developer. </h1>
-            <p>Antool is a web collection of information on paid or free Design and Development tools</p>
-        </div>
-        <div>
-            <form>
-                <label>
-                    <input type="text" placeholder="find more than 430+ tools...">
-                    <button type="button">Search</button>
-                </label>
-            </form>
-            <a href="#"><img src="images/bx_bxl-facebook.svg"></a>
-            <a href="#"><img src="images/bx_bxl-instagram.svg"></a>
-            <a href="#"><img src="images/bx_bxl-twitter.svg"></a>
+        <div class="container">
+            <div class="awesome-tools">
+                <h1>Awesome tools for Designer & Developer. </h1>
+                <p>Antool is a web collection of information on paid or free Design and Development tools</p>
+            </div>
+            <div class="header-form">
+                <form>
+                    <label>
+                        <input class="form-text" type="text" placeholder="find more than 430+ tools...">
+                    </label>
+                    <button class="button-search" type="button">Search</button>
+                </form>
+                <div class="websites">
+                    <a class="facebook" href="#"><img src="images/bx_bxl-facebook.svg" alt="facebbook"></a>
+                    <a class="instagram" href="#"><img src="images/bx_bxl-instagram.svg" alt="instagram"></a>
+                    <a class="twitter" href="#"><img src="images/bx_bxl-twitter.svg" alt="twitter"></a>
+                </div>
+            </div>
         </div>
     </header>
     <main>
         <section>
-            <div>
-                <h1>Most Popular Tools</h1>
-                <p>Tools for the best Designers and Developes most popularly used in the world</p>
-            </div>
-            <article>
-                <div>
-                    <img src="images/grommet-icons_figma.svg">
-                    <div>
-                        <h2>FIGMA</h4>
-                        <h3>Free</h3>
+            <div class="container">
+                <div class="main-text">
+                    <h1>Most Popular Tools</h1>
+                    <p>Tools for the best Designers and Developes most popularly used in the world</p>
+                </div>
+                <article>
+                    <div class="card">
+                        <img src="images/figma.svg" alt="figma">
+                        <div class="title-card">
+                            <h2>Figma</h2>
+                            <h3>Free</h3>
+                        </div>
+                        <div class="text-card">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="link-and-likes">
+                            <button type="button"><img src="images/like.svg" alt="like"></button>
+                            <button type="button"><img src="images/folder.svg" alt="folder"></button>
+                            <a href="#">Visit</a>
+                        </div>
                     </div>
-                    <div>
+                    <div class="card">
+                        <img src="images/sketch.svg" alt="sketch">
+                        <div class="title-card">
+                            <h2>Sketch</h2>
+                            <h3>Trial & Paid</h3>
+                        </div>
+                        <div class="text-card">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="link-and-likes">
+                            <button type="button"><img src="images/like.svg" alt="like"></button>
+                            <button type="button"><img src="images/folder.svg" alt="folder"></button>
+                            <a href="#">Visit</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/visual-studio-code.svg" alt="studio">
+                        <div class="title-card">
+                            <h2>Visual Studio Code</h2>
+                            <h3>Free</h3>
+                        </div>
+                        <div class="text-card">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="link-and-likes">
+                            <button type="button"><img src="images/like.svg" alt="like"></button>
+                            <button type="button"><img src="images/folder.svg" alt="folder"></button>
+                            <a href="#">Visit</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/notion.svg" alt="notion">
+                        <div class="title-card">
+                            <h2>Notion</h2>
+                            <h3>Free & Paid</h3>
+                        </div>
+                        <div class="text-card">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="link-and-likes">
+                            <button type="button"><img src="images/like.svg" alt="like"></button>
+                            <button type="button"><img src="images/folder.svg" alt="folder"></button>
+                            <a href="#">Visit</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/slack.svg" alt="slack">
+                        <div class="title-card">
+                            <h2>Slack</h2>
+                            <h3>Free & Paid</h3>
+                        </div>
+                        <div class="text-card">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="link-and-likes">
+                            <button type="button"><img src="images/like.svg" alt="like"></button>
+                            <button type="button"><img src="images/folder.svg" alt="folder"></button>
+                            <a href="#">Visit</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/invision.svg" alt="invisions">
+                        <div class="title-card">
+                            <h2>Invision</h2>
+                            <h3>Free & Paid</h3>
+                        </div>
+                        <div class="text-card">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="link-and-likes">
+                            <button type="button"><img src="images/like.svg" alt="like"></button>
+                            <button type="button"><img src="images/folder.svg" alt="folder"></button>
+                            <a href="#">Visit</a>
+                        </div>
+                    </div>
+                </article>
+                <button class="Load-more" type="button">Load more</button>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2>Trusted more than 150+ brand</h2>
+                <div class="brands">
+                    <img src="images/microsoft.svg" alt="microsoft">
+                    <img src="images/google.svg" alt="google">
+                    <img src="images/logos_slack.svg" alt="slacks">
+                    <img src="images/wordpress.svg" alt="wordpress">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="newcomer">
+                    <h1>Newcomer Tools</h1>
+                    <p>Wow! see the larest update of the most recommended tools from reliable designers and developes
+                    </p>
+                </div>
+                <button class="explore more" type="button">Explore more</button>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="card-zeplin">
+                    <img src="images/zeplin.svg" alt="zeplin">
+                    <div class="title-card">
+                        <h2>Zeplin</h2>
+                        <h3>Free & Paid</h3>
+                    </div>
+                    <div class="text-card">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <button type="button"><img src="images/Group 1376.svg"></button>
-                    <button type="button"><img src="images/Group 1375.svg"></button>
-                    <a href="#">Visit</a>
+                    <div class="link-and-likes">
+                        <button type="button"><img src="images/like.svg" alt="like"></button>
+                        <button type="button"><img src="images/folder.svg" alt="folder"></button>
+                        <a href="#">Visit</a>
+                    </div>
                 </div>
-            </article>
+                <div class="card-zeplin">
+                    <img src="images/phpstorm.svg" alt="phpstorm">
+                    <div class="title-card">
+                        <h2>PHPStorm</h2>
+                        <h3>Free</h3>
+                    </div>
+                    <div class="text-card">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="link-and-likes">
+                        <button type="button"><img src="images/like.svg" alt="like"></button>
+                        <button type="button"><img src="images/folder.svg" alt="folder"></button>
+                        <a href="#">Visit</a>
+                    </div>
+                </div>
+                <div class="card-zeplin">
+                    <img src="images/toolbox.svg" alt="toolbox">
+                    <div class="title-card">
+                        <h2>Toolbox</h2>
+                        <h3>Free</h3>
+                    </div>
+                    <div class="text-card">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="link-and-likes">
+                        <button type="button"><img src="images/like.svg" alt="like"></button>
+                        <button type="button"><img src="images/folder.svg" alt="folder"></button>
+                        <a href="#">Visit</a>
+                    </div>
+                </div>
+                <div class="card-zeplin">
+                    <img src="images/procreate.svg" alt="procreate">
+                    <div class="title-card">
+                        <h2>Procreate</h2>
+                        <h3>Paid</h3>
+                    </div>
+                    <div class="text-card">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="link-and-likes">
+                        <button type="button"><img src="images/like.svg" alt="like"></button>
+                        <button type="button"><img src="images/folder.svg" alt="folder"></button>
+                        <a href="#">Visit</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>
