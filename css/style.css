@@ -773,6 +773,13 @@ footer {
   font-style: normal;
   font-size: 14;
   line-height: 25px;
+  width: 260px;
+  height: 75px;
+}
+
+.contact-us{
+  display: flex;
+  justify-content: space-between;
 }
 
 .contact-us h2 {
@@ -795,6 +802,7 @@ footer {
 
 .list-categorie {
   list-style: none;
+  display: block;
 }
 
 .categorie h2 {
@@ -813,8 +821,10 @@ footer {
   font-size: 16px;
 }
 
+
 .list-company {
   list-style: none;
+  display: block;
 }
 
 .company h2 {
