@@ -217,6 +217,8 @@ h1 {
 .awesome-tools p {
   color: var(--white-text);
   margin-bottom: 60px;
+  line-height: 30px;
+  font-size: 18px;
 }
 
 .form-text {
@@ -497,7 +499,7 @@ h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 48px;
+  font-size: 50px;
 }
 
 .newcomer p {
@@ -506,6 +508,7 @@ h1 {
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
+  line-height: 30px;
 }
 
 .explore-more {
