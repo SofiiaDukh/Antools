@@ -657,13 +657,11 @@ h1 {
 
 .text-wrapper p {
   color: rgba(255, 255, 255, 0.78);
-  background-color: none;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
   line-height: 30px;
-  letter-spacing: 1.5%;
   margin: 0;
   padding: 0;
   width: 393px;
@@ -841,4 +839,13 @@ footer {
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
+}
+
+.design{ 
+  margin-bottom: 10px;
+}
+
+.our{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
