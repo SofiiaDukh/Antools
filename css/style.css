@@ -118,7 +118,7 @@
   --text-manager: #FFFDFD;
 }
 
-* {
+body {
   background-color: var(--all-background);
   box-sizing: border-box;
 }
@@ -186,6 +186,7 @@ button {
 
 .buttones {
   color: var(--white-text);
+  background-color: var(--all-background);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -221,26 +222,29 @@ h1 {
   font-size: 18px;
 }
 
+
+
 .form-text {
   width: 495px;
   height: 64px;
-  border: 1px;
   border-radius: 5px;
+  background-color: var(--backgroung-label);
 }
 
-.form-text:hover {
-  background-color: var(--backgroung-label);
-  box-shadow: color(#837A93);
-}
 
 .button-search {
   color: var(--white-text);
+  background-color: var(--all-background);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 16px;
   padding: 12px 36px;
   cursor: pointer;
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  transform: translate(350px,-54px);
 }
 
 .button-search:hover {
@@ -248,18 +252,22 @@ h1 {
 }
 
 .flex-form {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 500px;
-  height: 65px;
+  width: 360px;
+  background: var(--all-background);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  border: 0;
+  outline: 0;
+  padding: 22px 18px;
 }
 
 .flex-form input {
-  flex-grow: 1;
   border: none;
-  padding: 5px;
+  padding-left: 50px;
   outline: none;
+}
+
+.flex-form img{
+  transform: translate(18px,48px);
 }
 
 .websites {
@@ -274,7 +282,7 @@ h1 {
 
 .foto-illustration {
   float: right;
-  margin-left: 500px;
+  margin-left: 305px;
 }
 
 .background-foto {
@@ -378,6 +386,10 @@ h1 {
   align-items: center;
 }
 
+.link-and-button{
+  background-color: var(--all-background);
+}
+
 .likes-button {
   color: var(--white-text);
   font-family: "Poppins", sans-serif;
@@ -423,14 +435,13 @@ h1 {
 
 .load-more {
   color: var(--orange-button);
+  background-color: var(--all-background);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 20px;
   padding: 17px 38px;
   cursor: pointer;
-  width: 184px;
-  height: 64px;
 }
 
 .load-more:hover {
@@ -470,7 +481,7 @@ h1 {
   margin-right: 107px;
 }
 
-.trusted:hover {
+.trusted {
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   background: rgba(40, 48, 54, 0.60);
@@ -513,6 +524,7 @@ h1 {
 
 .explore-more {
   color: var(--white-text);
+  background-color: var(--all-background);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -520,8 +532,6 @@ h1 {
   padding: 16px 40px;
   cursor: pointer;
   margin-top: 50px;
-  width: 198px;
-  height: 58px;
 }
 
 .explore-more:hover {
@@ -546,9 +556,13 @@ h1 {
   background-image: radial-gradient(ellipse at top right, rgba(254, 135, 84, 0.307), rgba(255, 255, 255, 0) 20%);
 }
 
-.links-and-button img {
+ .links-and-button img {
   width: 42px;
   height: 42px;
+} 
+
+.links-and-button{
+  background-color: var(--all-background);
 }
 
 .links-and-likes {
@@ -619,7 +633,7 @@ h1 {
 .ronald {
   align-items: center;
   justify-content: space-around;
-  margin-left: 50px;
+  margin-left: 150px;
 }
 
 .manager {
@@ -629,7 +643,7 @@ h1 {
   border-radius: 8px;
   backdrop-filter: blur(50px);
   background: rgba(40, 48, 54, 0.2);
-  transform: translate(200px, -120px);
+  transform: translate(300px, -120px);
 }
 
 .manager h2 {
@@ -669,19 +683,19 @@ h1 {
   padding: 0;
   width: 393px;
   height: 180px;
-  transform: translate(530px, -600px);
+  transform: translate(600px, -600px);
 }
 
 .left {
-  transform: translate(-100px, 260px);
+  transform: translate(-10px, 260px);
 }
 
 .right {
-  transform: translate(1050px, 280px);
+  transform: translate(1100px, 260px);
 }
 
 .extra {
-  transform: translate(470px, -550px);
+  transform: translate(550px, -550px);
 }
 
 .line {
@@ -726,32 +740,40 @@ h1 {
 
 }
 
+.input-wrapper{
+  margin-left: 120px;
+}
+
 .button-joinus {
   color: var(--white-text);
+  background-color: var(--all-background);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 16px;
   cursor: pointer;
+  padding: 12px 35px;
+  transform: translate(-150px,-1px);
 }
 
 .button-joinus:hover {
   color: var(--text-button);
   background-color: var(--orange-button);
-  padding: 12px 35px;
 }
 
 .form-text-become {
+  background-color: var(--backgroung-label);
   width: 495px;
   height: 64px;
   border: 1px;
-  border-radius: 5px;
+  border-radius: 10px;
+  padding: 25px;
 }
 
-.form-text-become:hover {
+/* .form-text-become:hover {
   background-color: var(--backgroung-label);
   box-shadow: color(#837A93);
-}
+} */
 
 /* footer */
 footer {
@@ -778,7 +800,7 @@ footer {
   height: 75px;
 }
 
-.contact-us{
+.contact-us {
   display: flex;
   justify-content: space-between;
 }
@@ -844,11 +866,11 @@ footer {
   font-size: 16px;
 }
 
-.design{ 
+.design {
   margin-bottom: 10px;
 }
 
-.our{
+.our {
   margin-top: 10px;
   margin-bottom: 10px;
 }
