@@ -362,7 +362,6 @@ h1 {
 .card:hover {
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  background: rgba(40, 48, 54, 0.60);
   background-image: radial-gradient(ellipse at top right, rgba(254, 135, 84, 0.307), rgba(255, 255, 255, 0) 20%);
 }
 
@@ -490,12 +489,12 @@ h1 {
 
 .wow-see {
   margin-top: 200px;
+  display: flex;
 }
 
 .newcomer-tools {
   display: block;
-  width: 427px;
-  height: 300px;
+  width: 50%;
 }
 
 .newcomer {
@@ -538,27 +537,27 @@ h1 {
   background-color: var(--orange-button);
 }
 
+.card-wrap-newcomer {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card-zeplin {
   width: 288px;
   height: 284px;
-  margin-right: 24px;
+  margin-bottom: 50px;
 }
 
-.card-zeplin img {
-  width: 64px;
-  height: 64px;
-}
-
-.card-zeplin:hover {
+ .card-zeplin:hover {
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  background: rgba(40, 48, 54, 0.60);
   background-image: radial-gradient(ellipse at top right, rgba(254, 135, 84, 0.307), rgba(255, 255, 255, 0) 20%);
-}
+} 
 
  .links-and-button img {
-  width: 42px;
-  height: 42px;
+  width: 25px;
+  height: 21px;
 } 
 
 .links-and-button{
@@ -568,19 +567,6 @@ h1 {
 .links-and-likes {
   display: flex;
   margin-left: 22px;
-}
-
-
-.first-zeplin-card {
-  display: flex;
-  margin-right: 24px;
-  transform: translate(650px, -260px);
-}
-
-.second-zeplin-card {
-  display: flex;
-  margin-right: 24px;
-  transform: translate(650px, -200px);
 }
 
 .titles-card {
