@@ -548,7 +548,7 @@ h1 {
 
  .card-zeplin:hover {
   border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  outline: 1px solid rgba(255, 255, 255, 0.5);
   background-image: radial-gradient(ellipse at top right, rgba(254, 135, 84, 0.307), rgba(255, 255, 255, 0) 20%);
 } 
 
