@@ -126,8 +126,8 @@ body {
 /* header */
 
 
-.header {
-  padding: 25px 0;
+header {
+  padding-top: 30px;
 }
 
 .container {
@@ -143,10 +143,6 @@ body {
   align-items: center;
 }
 
-.logo {
-  margin-top: 34px;
-}
-
 
 .header-navigation {
   font-weight: 500;
@@ -158,7 +154,6 @@ body {
   display: flex;
   justify-content: flex-start;
   gap: 50px;
-  margin-top: 38px;
 }
 
 .homes {
@@ -172,6 +167,7 @@ body {
 .my-collections,
 .blog {
   color: var(--white-text);
+  text-decoration: none;
 }
 
 .buttons {
@@ -229,6 +225,7 @@ h1 {
   height: 64px;
   border-radius: 5px;
   background-color: var(--backgroung-label);
+  color: var(--white-text);
 }
 
 
@@ -352,16 +349,21 @@ h1 {
   margin-right: 33px;
 }
 
-
-.first-card {
+.article-cards{
   display: flex;
-  margin: 0;
   margin-top: 90px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 50%;
+  flex-basis: calc((100% - 50px) /3);
+  margin-bottom: 100px;
 }
 
 .card:hover {
   border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  outline: 1px solid rgba(255, 255, 255, 0.5);
   background-image: radial-gradient(ellipse at top right, rgba(254, 135, 84, 0.307), rgba(255, 255, 255, 0) 20%);
 }
 
@@ -412,11 +414,6 @@ h1 {
   height: 48px;
 }
 
-.second-card {
-  display: flex;
-  margin: 0;
-  margin-top: 100px;
-}
 
 .flexs-card {
   display: flex;
@@ -749,17 +746,13 @@ h1 {
 
 .form-text-become {
   background-color: var(--backgroung-label);
+  color: var(--white-text);
   width: 495px;
   height: 64px;
   border: 1px;
   border-radius: 10px;
   padding: 25px;
 }
-
-/* .form-text-become:hover {
-  background-color: var(--backgroung-label);
-  box-shadow: color(#837A93);
-} */
 
 /* footer */
 footer {
@@ -799,6 +792,7 @@ footer {
   font-size: 20px;
 }
 
+
 .tel,
 .email,
 .adres {
@@ -807,6 +801,7 @@ footer {
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
+  text-decoration: none;
 }
 
 .list-categorie {
@@ -828,6 +823,7 @@ footer {
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
+  text-decoration: none;
 }
 
 
@@ -850,6 +846,7 @@ footer {
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
+  text-decoration: none;
 }
 
 .design {
