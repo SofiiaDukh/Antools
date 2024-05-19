@@ -545,7 +545,7 @@ h1 {
 
 .explore-more {
   color: var(--white-text);
-  background-color: var(--all-background);
+  background-color: var(--orange-button);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -556,7 +556,9 @@ h1 {
 }
 
 .explore-more:hover {
-  background-color: var(--orange-button);
+  color: var(--text-color-grey);
+  background-color: var(--all-background);
+  outline: 2px solid var(--orange-button);
 }
 
 .card-wrap-newcomer {
