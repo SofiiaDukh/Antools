@@ -116,6 +116,7 @@
   --text-color-most: #FFA537;
   --like-color: #FD3B41;
   --text-manager: #FFFDFD;
+  --text-color-grey: rgba(255, 255, 255, 0.55);
 }
 
 body {
@@ -162,11 +163,15 @@ header {
   font-style: normal;
 }
 
+.homes a:hover {
+  color: var(--white-text);
+}
+
 .home,
 .categories,
 .my-collections,
 .blog {
-  color: var(--white-text);
+  color: var(--text-color-grey);
   text-decoration: none;
 }
 
@@ -181,7 +186,7 @@ button {
 }
 
 .buttones {
-  color: var(--white-text);
+  color: var(--text-color-grey);
   background-color: var(--all-background);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -193,6 +198,22 @@ button {
 .buttones:hover {
   color: var(--text-button);
   background-color: var(--orange-button);
+}
+
+.buton {
+  color: var(--text-button);
+  background-color: var(--orange-button);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  padding: 12px 28px;
+}
+
+.buton:hover {
+  color: var(--text-color-grey);
+  background-color: var(--all-background);
+  outline: 2px solid var(--orange-button);
 }
 
 .awesome-tools {
@@ -212,7 +233,7 @@ h1 {
 }
 
 .awesome-tools p {
-  color: var(--white-text);
+  color: var(--text-color-grey);
   margin-bottom: 60px;
   line-height: 30px;
   font-size: 18px;
@@ -231,7 +252,7 @@ h1 {
 
 .button-search {
   color: var(--white-text);
-  background-color: var(--all-background);
+  background-color: var(--orange-button);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -241,11 +262,13 @@ h1 {
   display: inline-block;
   border: 0;
   outline: 0;
-  transform: translate(350px,-54px);
+  transform: translate(350px, -54px);
 }
 
 .button-search:hover {
-  background-color: var(--orange-button);
+  color: var(--text-color-grey);
+  background-color: var(--all-background);
+  outline: 2px solid var(--orange-button);
 }
 
 .flex-form {
@@ -263,8 +286,8 @@ h1 {
   outline: none;
 }
 
-.flex-form img{
-  transform: translate(18px,48px);
+.flex-form img {
+  transform: translate(18px, 48px);
 }
 
 .websites {
@@ -305,7 +328,7 @@ h1 {
 }
 
 .main-text p {
-  color: var(--white-text);
+  color: var(--text-color-grey);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -338,7 +361,7 @@ h1 {
 }
 
 .text-card p {
-  color: var(--white-text);
+  color: var(--text-color-grey);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -349,10 +372,11 @@ h1 {
   margin-right: 33px;
 }
 
-.article-cards{
+.article-cards {
   display: flex;
   margin-top: 90px;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card {
@@ -387,12 +411,12 @@ h1 {
   align-items: center;
 }
 
-.link-and-button{
+.link-and-button {
   background-color: var(--all-background);
 }
 
 .likes-button {
-  color: var(--white-text);
+  color: var(--text-color-grey);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -401,7 +425,7 @@ h1 {
   cursor: pointer;
   width: 130px;
   height: 48px;
-  margin-left: 124px;
+  margin-left: 140px;
 }
 
 .likes-button:hover {
@@ -431,6 +455,7 @@ h1 {
 
 .load-more {
   color: var(--orange-button);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   background-color: var(--all-background);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -441,7 +466,7 @@ h1 {
 }
 
 .load-more:hover {
-  border: 1px solid var(--white-text);
+  border: 2px solid var(--orange-button);
 }
 
 .load-button {
@@ -466,22 +491,22 @@ h1 {
 }
 
 .brands {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
   margin-bottom: 56px;
+  justify-content: center;
+  align-items: center;
 }
 
-.foto-brands {
+.foto-brands:not(:last-child) {
   border-style: none;
   margin-right: 107px;
 }
 
 .trusted {
   border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(44, 53, 61, 0.2);
   background: rgba(40, 48, 54, 0.60);
-  background-image: radial-gradient(ellipse at top left, rgba(254, 135, 84, 0.307), rgba(255, 255, 255, 0) 20%);
+  background-image: radial-gradient(circle at top left, rgba(255, 72, 66, 0.4), rgba(44, 53, 61, 0.2) 10%);
 }
 
 .wow-see {
@@ -510,7 +535,7 @@ h1 {
 }
 
 .newcomer p {
-  color: var(--white-text);
+  color: var(--text-color-grey);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -538,6 +563,11 @@ h1 {
   width: 50%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
 }
 
 .card-zeplin {
@@ -546,18 +576,18 @@ h1 {
   margin-bottom: 50px;
 }
 
- .card-zeplin:hover {
+.card-zeplin:hover {
   border-radius: 15px;
   outline: 1px solid rgba(255, 255, 255, 0.5);
   background-image: radial-gradient(ellipse at top right, rgba(254, 135, 84, 0.307), rgba(255, 255, 255, 0) 20%);
-} 
+}
 
- .links-and-button img {
+.links-and-button img {
   width: 25px;
   height: 21px;
-} 
+}
 
-.links-and-button{
+.links-and-button {
   background-color: var(--all-background);
 }
 
@@ -593,7 +623,7 @@ h1 {
 }
 
 .like-button {
-  color: var(--white-text);
+  color: var(--text-color-grey);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -602,7 +632,7 @@ h1 {
   cursor: pointer;
   width: 106px;
   height: 42px;
-  margin-left: 35px;
+  margin-left: 70px;
 }
 
 .like-button:hover {
@@ -643,7 +673,7 @@ h1 {
 }
 
 .manager p {
-  color: rgba(255, 253, 253, 0.55);
+  color: var(--text-color-grey);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -705,15 +735,15 @@ h1 {
 }
 
 .text-become p {
-  color: var(--white-text);
+  color: var(--text-color-grey);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
   line-height: 30px;
   width: 427px;
-  height: 60px;
   margin-top: 25px;
+  text-align: center;
 }
 
 .form-become {
@@ -723,25 +753,26 @@ h1 {
 
 }
 
-.input-wrapper{
+.input-wrapper {
   margin-left: 120px;
 }
 
 .button-joinus {
   color: var(--white-text);
-  background-color: var(--all-background);
+  background-color: var(--orange-button);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 16px;
   cursor: pointer;
   padding: 12px 35px;
-  transform: translate(-150px,-1px);
+  transform: translate(-150px, -1px);
 }
 
 .button-joinus:hover {
   color: var(--text-button);
-  background-color: var(--orange-button);
+  background-color: var(--all-background);
+  outline: 2px solid var(--orange-button);
 }
 
 .form-text-become {
@@ -756,7 +787,7 @@ h1 {
 
 /* footer */
 footer {
-  margin-top: 240px;
+  margin-top: 200px;
   border-top: 0.5px solid rgba(255, 255, 255, 0.15);
 }
 
@@ -769,7 +800,7 @@ footer {
 }
 
 .logo-footer p {
-  color: var(--white-text);
+  color: var(--text-color-grey);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -782,6 +813,8 @@ footer {
 .contact-us {
   display: flex;
   justify-content: space-between;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .contact-us h2 {
@@ -796,7 +829,7 @@ footer {
 .tel,
 .email,
 .adres {
-  color: var(--text-manager);
+  color: var(--text-color-grey);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -818,7 +851,7 @@ footer {
 }
 
 .categorie a {
-  color: var(--white-text);
+  color: var(--text-color-grey);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -841,7 +874,7 @@ footer {
 }
 
 .company a {
-  color: var(--white-text);
+  color: var(--text-color-grey);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
